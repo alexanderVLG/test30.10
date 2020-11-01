@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CardItem, ScrollButton } from './components';
 import { barsic, murka, vasiliy, like } from './img';
 import {
@@ -62,34 +62,41 @@ const catsData = [
 ]
 
 const Content = () => {
+  const [isSorted, setIsSorted] = useState(false);
 
-  const sortedDataAge = catsData.sort((a, b) => {
-    return (
-      a.age - b.age
-    )
-  })
+  const setSortedData = (catsData) => {
 
-  const sortedDataPrice = catsData.sort((a, b) => {
-    return (
-      a.price - b.price
-    )
-  })
+    const sortedDataPrice = catsData.sort((a, b) => {
+      return (
+        a.price - b.price
+      )
+    })
+
+    const sortedDataAge = catsData.sort((a, b) => {
+      return (
+        a.age - b.age
+      )
+    })
+
+    const dataOfAge = [...sortedDataAge];
+    const dataOfPrice = [...sortedDataPrice];
+    console.log(sortedDataPrice)
+
+  }
 
   const handleSortByPrice = () => {
-
+    console.log("hey")
   }
 
   const handleSortByAge = () => {
-
+    console.log('buy')
   }
 
-  const renderCatList = sortedDataPrice.map((catItem) => {
+  const renderCatList = catsData.map((catItem) => {
     return (
       <CardItem {...catItem} />
     )
   })
-
-
 
   return (
     <ContentSection>
