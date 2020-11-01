@@ -1,5 +1,5 @@
 import CardItem from './CardItem';
 
 export {
-  CardItem
+  CardItem,
 }

@@ -128,6 +128,18 @@ export const SortElem = styled.div`
     ul li:last-child span {
       margin-left: 24px;
     }
+
+    @media(max-width: 570px) {
+      ul li:nth-child(2),
+      ul li:nth-child(4) {
+        margin-left: 20px;
+      }
+
+      ul li span,
+      ul li:last-child span {
+        margin-left: 6px;
+      }
+    }
 `;
 
 export const Flex = styled.div`
@@ -142,6 +154,8 @@ export const ContentFlex = styled(Flex)`
 export const Item = styled.div`
     flex: 0 0 32%;
     background-color: #F3F3F3;
+    margin-left: 7px;
+    margin-right: 7px;
     margin-bottom: 23px;
 
       .first__div {
