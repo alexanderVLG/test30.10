@@ -1,14 +1,27 @@
 import React from 'react';
 import {
-  HeaderSection,
-  Container
+  FooterSection,
+  FooterContainer,
+  Flex,
+  Form
 } from './styles/styles';
 
 const Footer = () => {
   return (
-    <Container>
-      3
-    </Container>
+    <FooterSection>
+      <FooterContainer>
+        <Flex>
+          <div>
+            <div>Успей купить!</div>
+            <div>Подпишись и успей словить все акции</div>
+          </div>
+          <Form>
+
+          </Form>
+        </Flex>
+      </FooterContainer>
+    </FooterSection>
+
   );
 };
 

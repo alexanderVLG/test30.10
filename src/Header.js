@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { logo } from "./media/img";
 import {
   HeaderSection,
@@ -8,7 +8,19 @@ import {
   InformTitle
 } from './styles/styles';
 
+
 const Header = () => {
+
+  const [toggleState, setToggleState] = useState(false);
+
+  function toggleMenuMode() {
+    setToggleState(!toggleState);
+  }
+
+  const clickHandler = () => {
+    toggleMenuMode();
+  };
+
   return (
     < HeaderSection className="header" >
       <Container>
@@ -17,7 +29,9 @@ const Header = () => {
             <img src={logo} alt="логотип" />
           </NavItem>
           <NavItem>
-            <div className="header__burger">
+            <div
+              className={`header__burger ${toggleState ? 'active' : ''}`}
+              onClick={clickHandler} >
               <span></span>
             </div>
           </NavItem>

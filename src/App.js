@@ -4,10 +4,6 @@ import Header from './Header';
 import Content from "./Content";
 
 
-
-
-
-
 class App extends Component {
   render() {
     return (

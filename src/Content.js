@@ -10,10 +10,11 @@ import {
   ItemTitle,
   Info,
   CardButton,
-  Price
+  Price,
+  AjaxButton
 } from './styles/styles';
 
-const MainPage = () => {
+const Content = () => {
   return (
     <ContentSection>
       <Container>
@@ -142,6 +143,7 @@ const MainPage = () => {
             </CardButton>
           </Item>
         </Flex>
+        <AjaxButton>Показать еще 20 </AjaxButton>
       </Container>
     </ContentSection>
 
@@ -149,4 +151,4 @@ const MainPage = () => {
 };
 
 
-export default MainPage;
+export default Content;

@@ -134,7 +134,7 @@ export const Flex = styled.div`
 `;
 
 export const Item = styled.div`
-    flex: 0 0 31.4%;
+    flex: 0 0 32%;
     background-color: #F3F3F3;
     margin-bottom: 23px;
 `;
@@ -188,4 +188,39 @@ export const CardButton = styled.div`
   background-color: #6EBBD3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+`;
+
+export const AjaxButton = styled.div`
+  margin: 68px  auto 83px ;
+  max-width: 380px;
+  padding: 24px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  border: 1px solid #CACACA;
+  border-radius: 10px;
+  text-align: center;
+
+  &:hover {
+    background-color: pink;
+    color: white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+`;
+
+/* Footer styles */
+
+export const FooterSection = styled.section`
+  color: white;
+`;
+
+export const FooterContainer = styled(Container)`
+  background-color: #1F2021;
+  padding: 82px 80px 92px;
+`;
+
+export const Form = styled.form`
+
 `;
