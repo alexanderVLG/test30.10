@@ -1,6 +1,6 @@
 import React from 'react';
-import { CardItem } from './component';
-import { barsic, murka, vasiliy, like, likesold } from './media/img';
+import { CardItem } from './components';
+import { catsData } from './mock';
 
 import {
   ContentSection,
@@ -8,15 +8,17 @@ import {
   SortElem,
   Flex,
   ContentFlex,
-  Item,
-  ItemTitle,
-  Info,
-  CardButton,
-  Price,
   AjaxButton
 } from './styles/styles';
 
+
 const Content = () => {
+  const renderCatList = catsData.map((catItem) => {
+    return (
+      <CardItem {...catItem} />
+    )
+  })
+
   return (
     <ContentSection>
       <Container>
@@ -30,12 +32,7 @@ const Content = () => {
           </ul>
         </SortElem>
         <ContentFlex>
-          <CardItem />
-          <CardItem />
-          <CardItem />
-          <CardItem />
-          <CardItem />
-          <CardItem />
+          {renderCatList}
         </ContentFlex>
         <Flex style={{ justifyContent: "center" }}>
           <AjaxButton>Показать еще 20 </AjaxButton>
