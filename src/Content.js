@@ -1,6 +1,6 @@
 import React from 'react';
-import { CardItem } from './components';
-import { barsic, murka, vasiliy, like } from './media/img';
+import { CardItem, ScrollButton } from './components';
+import { barsic, murka, vasiliy, like } from './img';
 import {
   ContentSection,
   Container,
@@ -95,22 +95,19 @@ const Content = () => {
     <ContentSection>
       <Container>
         <SortElem>
-          <ul>
-            <li>Сортировать по:</li>
-            <li onClick={handleSortByPrice}>Цене</li>
-            <li><span></span></li>
-            <li onClick={handleSortByAge}>Возрасту</li>
-            <li><span></span></li>
-          </ul>
+          <div>Сортировать по:</div>
+          <div onClick={handleSortByPrice}>Цене<span></span></div>
+          <div onClick={handleSortByAge}>Возрасту<span></span></div>
         </SortElem>
         <ContentFlex>
           {renderCatList}
         </ContentFlex>
-        <Flex style={{ justifyContent: "center" }}>
+        <Flex style={{ justifyContent: "center", position: "relative" }}>
           <AjaxButton>Показать еще 20 </AjaxButton>
+          <ScrollButton />
         </Flex>
       </Container>
-    </ContentSection >
+    </ContentSection>
   );
 };
 

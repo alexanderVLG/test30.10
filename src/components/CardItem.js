@@ -1,6 +1,6 @@
 import React from 'react';
 import { Item, ItemTitle, Price, CardButton, Info } from '../styles/styles';
-import { like } from '../media/img';
+import { like } from '../img';
 
 const CardItem = ({ name, imgSrc, age, price }) => {
 

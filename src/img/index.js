@@ -1,6 +1,7 @@
 import background from './background.png';
 import logo from './logo.svg';
 import arrow from './arrow.svg';
+import ScrollUp from './ScrollUp.svg';
 import barsic from './barsic.png';
 import murka from './murka.png';
 import vasiliy from './vasiliy.png';
@@ -15,5 +16,6 @@ export {
   murka,
   vasiliy,
   like,
-  likesold
+  likesold,
+  ScrollUp
 };

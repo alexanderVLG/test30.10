@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { logo } from "./media/img";
+import { logo } from "./img";
 import {
   HeaderSection,
   Container,

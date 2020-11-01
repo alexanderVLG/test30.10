@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { background, arrow } from "../media/img";
+import { background, arrow } from "../img";
 
 
 export const HeaderSection = styled.section`
@@ -42,6 +42,12 @@ export const Nav = styled.nav`
       color: pink;
       transition: all 0.3s ease 0s;
     }
+
+    @media (max-width: 1500px){
+      ul {
+        padding-right: 170px;
+      }
+    }
     
     @media (max-width: 1265px) {
       ul {
@@ -80,42 +86,39 @@ export const ContentSection = styled.section`
 
 `;
 
-export const SortElem = styled.div`
+export const Flex = styled.div`
+    display: flex;
+`;
 
-    ul {
-      padding: 35px 0;
-    }
+export const SortElem = styled(Flex)`
+  align-items: center;
+  padding: 35px 0;
 
-    ul li:first-child {
+    div:first-child {
       font-size: 18px;
-      font-style: normal;
       font-weight: 700;
       line-height: 22px;
       letter-spacing: 0em;
     }
 
-    ul li {
-      display: inline-block;
-    }
-
-    ul li:nth-child(2) {
+    div:nth-child(2) {
       margin-left: 45px;
     }
 
-    ul li:nth-child(4) {
+    div:nth-child(3) {
       margin-left: 55px;
     }
 
-    ul li:nth-child(2):hover, 
-    ul li:nth-child(4):hover,
-    ul li span:hover {
+    div:nth-child(2):hover, 
+    div:nth-child(3):hover,
+    div span:hover {
       cursor: pointer;
       color: pink;
       transition: all 0.3s ease 0s;
     }
 
 
-    ul li span {
+    div span {
       display: inline-block;
       vertical-align: bottom;
       margin-bottom: -2px;
@@ -125,25 +128,29 @@ export const SortElem = styled.div`
       background-image: url(${arrow});
       background-repeat: no-repeat;
     }
-    ul li:last-child span {
+    div:last-child span {
       margin-left: 24px;
     }
 
     @media(max-width: 570px) {
-      ul li:nth-child(2),
-      ul li:nth-child(4) {
+      flex-direction: column;
+      justifi-content: center;
+
+      div {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+      div:nth-child(2),
+      div:nth-child(3) {
         margin-left: 20px;
       }
 
-      ul li span,
-      ul li:last-child span {
+      div span,
+      div:last-child span {
         margin-left: 6px;
       }
     }
-`;
-
-export const Flex = styled.div`
-    display: flex;
 `;
 
 export const ContentFlex = styled(Flex)`

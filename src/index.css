@@ -174,6 +174,28 @@ ol {
   border-radius: 10px;
 }
 
+/* Scroll button */
+.scroll__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 49px;
+  width: 59px;
+  height: 59px;
+  background-color: #6ebbd3;
+}
+
+.scroll__button:hover {
+  transition: all 0.3s ease 0s;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.scroll__button img {
+  width: 12px;
+  height: 18px;
+}
+
 /* Footer styles */
 
 .footer__title {
@@ -258,6 +280,10 @@ ol {
 
   .form__button {
     padding: 12px;
+  }
+
+  .scroll__button {
+    margin-bottom: 20px;
   }
 }
 
