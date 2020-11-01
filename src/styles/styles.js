@@ -3,6 +3,7 @@ import { background, arrow } from "../media/img";
 
 
 export const HeaderSection = styled.section`
+  width: 100%;
   background-image: url(${background});
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,32 +20,32 @@ export const Nav = styled.nav`
   justify-content: space-between;
 
     ul {
-      padding-left: 120px;
-      padding-right: 272px;
+    padding-left: 120px;
+    padding-right: 272px;
     }
-
+  
     ul li {
       display: inline-block;
       margin-right: 50px;
     }
-
+    
     ul li:last-child {
       margin-right: 0;
     }
-
-    ul li a{
+    
+    ul li a {
       text-decoration: none;
       color: white;
     }
-
+    
     ul li a:hover {
       color: pink;
       transition: all 0.3s ease 0s;
     }
-
-    @media(max-width: 1265px) {
+    
+    @media (max-width: 1265px) {
       ul {
-      padding: 0 20px;
+        padding: 0 20px;
       }
     }
   `;
@@ -59,14 +60,17 @@ export const NavItem = styled.div`
     }
 `;
 
-export const InformTitle = styled.p`
-padding-bottom: 66px;
-font-size: 38px;
-font-style: normal;
-font-weight: 700;
-line-height: 46px;
-letter-spacing: 0em;
-text-align: left;
+export const HeaderInfo = styled.div`
+  padding-bottom: 66px;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+    @media(max-width: 510px) {
+      font-size: 24px;
+    }
 `;
 
 
@@ -124,28 +128,33 @@ export const SortElem = styled.div`
     ul li:last-child span {
       margin-left: 24px;
     }
-
 `;
 
 export const Flex = styled.div`
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+`;
+
+export const ContentFlex = styled(Flex)`
+  justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export const Item = styled.div`
     flex: 0 0 32%;
     background-color: #F3F3F3;
     margin-bottom: 23px;
+
+      .first__div {
+        position: relative;
+      }
 `;
 
-export const ItemTitle = styled.h3`
+export const ItemTitle = styled.div`
 font-size: 24px;
 font-weight: 700;
 line-height: 29px;
 letter-spacing: 0em;
 text-align: left;
-
 `;
 
 export const Info = styled.div`
@@ -160,8 +169,7 @@ export const Info = styled.div`
       line-height: 15px;
       letter-spacing: 0em;
       text-align: left;
-
-    }
+      }
 `;
 
 export const Price = styled.div`
@@ -173,9 +181,8 @@ export const Price = styled.div`
   text-align: left;
 `;
 
-export const CardButton = styled.div`
+export const CardButton = styled.button`
   padding: 22px 0;
-
   width: 100%;
   color:white;
   font-size: 16px;
@@ -184,16 +191,18 @@ export const CardButton = styled.div`
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
-
   background-color: #6EBBD3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: none;
+  outline: none;
 `;
 
-export const AjaxButton = styled.div`
+
+
+export const AjaxButton = styled.button`
   margin: 68px  auto 83px ;
-  max-width: 380px;
-  padding: 24px 0;
+  padding: 24px 127px;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -201,6 +210,9 @@ export const AjaxButton = styled.div`
   border: 1px solid #CACACA;
   border-radius: 10px;
   text-align: center;
+  outline: none;
+  border: none;
+  
 
   &:hover {
     background-color: pink;
@@ -219,8 +231,15 @@ export const FooterSection = styled.section`
 export const FooterContainer = styled(Container)`
   background-color: #1F2021;
   padding: 82px 80px 92px;
+
+    @media(max-width: 510px) {
+      padding: 20px;
+    }
 `;
 
-export const Form = styled.form`
-
+export const FooterFlex = styled(Flex)`
+  @media(max-width: 1240px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;

@@ -4,6 +4,8 @@ import arrow from './arrow.svg';
 import barsic from './barsic.png';
 import murka from './murka.png';
 import vasiliy from './vasiliy.png';
+import like from './like.svg';
+import likesold from './likesold.svg';
 
 export {
   background,
@@ -11,5 +13,7 @@ export {
   arrow,
   barsic,
   murka,
-  vasiliy
+  vasiliy,
+  like,
+  likesold
 };

@@ -2,23 +2,32 @@ import React from 'react';
 import {
   FooterSection,
   FooterContainer,
-  Flex,
-  Form
+  FooterFlex,
+  Flex
 } from './styles/styles';
 
 const Footer = () => {
   return (
     <FooterSection>
       <FooterContainer>
-        <Flex>
+        <FooterFlex>
           <div>
-            <div>Успей купить!</div>
-            <div>Подпишись и успей словить все акции</div>
+            <div className="footer__title">Успей купить!</div>
+            <div className="footer__text">Подпишись и успей словить все акции</div>
           </div>
-          <Form>
-
-          </Form>
-        </Flex>
+          <form>
+            <Flex style={{ marginBottom: "24px" }} className="form__item">
+              <input className="input__email" type="email" placeholder="Email" />
+              <button className="form__button">Подписаться</button>
+            </Flex>
+            <p>
+              <label className="checkbox__text">
+                <input className="form__checkbox" type="checkbox" />
+                  Подписаться на новости
+                </label>
+            </p>
+          </form>
+        </FooterFlex>
       </FooterContainer>
     </FooterSection>
 
