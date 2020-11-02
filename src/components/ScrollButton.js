@@ -1,6 +1,5 @@
 import React from 'react';
 import { BackTop } from 'antd';
-//import 'antd/dist/antd.css'; 
 import { ScrollUp } from '../img';
 
 const ScrollButton = () => {
