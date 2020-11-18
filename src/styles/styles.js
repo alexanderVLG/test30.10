@@ -69,10 +69,7 @@ export const NavItem = styled.div`
 export const HeaderInfo = styled.div`
   padding-bottom: 66px;
   font-size: 38px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 46px;
-  letter-spacing: 0em;
   text-align: left;
     @media(max-width: 510px) {
       font-size: 24px;
@@ -97,8 +94,6 @@ export const SortElem = styled(Flex)`
     div:first-child {
       font-size: 18px;
       font-weight: 700;
-      line-height: 22px;
-      letter-spacing: 0em;
     }
 
     div:nth-child(2) {
@@ -164,6 +159,8 @@ export const Item = styled.div`
     margin-left: 7px;
     margin-right: 7px;
     margin-bottom: 23px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
       .first__div {
         position: relative;
@@ -173,23 +170,20 @@ export const Item = styled.div`
 export const ItemTitle = styled.div`
 font-size: 24px;
 font-weight: 700;
-line-height: 29px;
-letter-spacing: 0em;
 text-align: left;
 `;
 
 export const Info = styled.div`
   display: flex;
-  margin: 25px 0;
-  padding-left: 18px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+  padding-left: 1.125em;
   border-left: 4px solid #6EBBD3;
 
     p {
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 15px;
-      letter-spacing: 0em;
-      text-align: left;
+      font-size: .75em;
+      height: 24px;
       }
 `;
 
@@ -197,9 +191,6 @@ export const Price = styled.div`
   margin-bottom: 28px;
   font-size: 24px;
   font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
 `;
 
 export const CardButton = styled.button`
@@ -207,10 +198,7 @@ export const CardButton = styled.button`
   width: 100%;
   color:white;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   background-color: #6EBBD3;
   border-bottom-left-radius: 10px;
@@ -226,8 +214,6 @@ export const AjaxButton = styled.button`
   padding: 24px 127px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
   border: 1px solid #CACACA;
   border-radius: 10px;
   text-align: center;

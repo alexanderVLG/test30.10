@@ -1,3 +1,13 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
@@ -41,16 +51,11 @@ ol {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 .header__text {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
   text-align: right;
 }
 
@@ -166,8 +171,6 @@ ol {
   left: 38px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   color: white;
   background-color: #e52d2d;
@@ -202,8 +205,6 @@ ol {
   margin-bottom: 26px;
   font-size: 48px;
   font-weight: 700;
-  line-height: 59px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -211,8 +212,6 @@ ol {
   margin-right: 20px;
   font-size: 28px;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -221,8 +220,6 @@ ol {
   padding: 22px 100px 22px 33px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
   border-radius: 10px;
   outline: none;
   border: none;
@@ -232,8 +229,6 @@ ol {
   padding: 22px 75px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0em;
   color: white;
   border-radius: 10px;
   border: none;
