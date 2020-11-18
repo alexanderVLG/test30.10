@@ -22,15 +22,15 @@ const Content = () => {
   }, [filter])
 
 
-  const handleSortCats = (keyName) => {
-    setFilter(keyName)
-  }
-
   const renderCatList = data.map((catItem, index) => {
     return (
       <CardItem key={index} {...catItem} />
     )
   })
+
+  const handleSortCats = (keyName) => {
+    setFilter(keyName)
+  }
 
   return (
 
