@@ -18,7 +18,7 @@ const Content = () => {
   useEffect(() => {
     const sortedData = sortByKeyValue(data, filter)
     setData(sortedData)
-  }, [filter])
+  }, [data, filter])
 
 
   const renderCatList = data.map((catItem, index) => {

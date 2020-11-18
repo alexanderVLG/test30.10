@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const sortByKeyValue = (data, key) => {
   const dataCopy = [...data]
 

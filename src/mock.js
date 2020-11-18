@@ -1,4 +1,3 @@
-import React from 'react';
 import { barsic, vasiliy, murka } from './img';
 
 export const catsData = [
