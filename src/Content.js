@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { CardItem, ScrollButton } from './components';
 import { catsData } from './mock';
 import { sortByKeyValue } from './util';
-import { barsic, murka, vasiliy, like } from './img';
 import {
   ContentSection,
   Container,
